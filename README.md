@@ -58,7 +58,8 @@ ball_x = new_x;ball_y = new_y;
 
 #FORGET ABOUT project
 ---
-bug but gold :)  
+I will make (made) simple sound game instead pong game cause:
+> ___bug but gold__ :)  
 ```plaintext
 
   uint8_t new_x = ball_x + ball_dir_x; uint8_t new_y = ball_y + ball_dir_y;
