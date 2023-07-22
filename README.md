@@ -2,8 +2,9 @@
 ---
 1. (v2). When u converting image to byte array, ___"DRAW MODE"___ shuld be ___"verticaL 1Bit per byte"___
 2. (v2). oled librarys default, gets vertical value sperated by ___default value___
->Display = 128x64 -->  64 = default_value (8) * n
+>Display = 128x64 -->  64 = default_value (8) * n, n = line number
 >I wrote 8 to default_value cause using oled font library (5x5_font.h) haves this:
+>(Actually, in library suggestions, founder of lib, writes all details)
 ```plaintext
 const DCfont TinyOLEDFont5x5 = {
   (uint8_t *)ssd1306xled_font5x5,
@@ -93,5 +94,8 @@ I will make (made) simple sound game instead pong game cause:
 ---
 1. Support Attiny85
 2. Graphics with optimizations
-3. Button contol
+3. Button controll
 4. Tones for Buzzer
+
+#Connections For ATpiyan0.ino
+---
