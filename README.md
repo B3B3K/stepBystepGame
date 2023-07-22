@@ -18,13 +18,13 @@ oled.setCursor(x, 4 ); // 8 (default_value) * n (4) = 32
 ```
 # TO DO LIST:
 ---
-1. add side switch for controlling -->>
-1.5. now works with one button
+1. add side switch for controlling 
+>> now works with one button
 3. oled should be 64*32 (made it)
-4. made targets, ball and scrolling thing 1px height
-4.5 now enemy and target is your time 
-6. make a physics
-6.5 why?
+4. made targets, ball and scrolling thing 1px height 
+>> now enemy and target is your time 
+6. make a physics 
+>> why?
 8. FINISH THE GAME (made it)
 
 #FIRST VERSION:
