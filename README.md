@@ -1,3 +1,17 @@
+#TIPS:
+---
+1 (v2). When u converting image to byte array, ___"DRAW MODE"___ shuld be ___"verticaL 1Bit per byte"___
+2 (V2). oled librarys default, gets vertical value sperated by ___default value___
+>Display = 128x64 -->  64 = 8 * default_value
+>I wrote 8 cause using oled font library (5x5_font.h )writes this:
+```plaintext
+const DCfont TinyOLEDFont5x5 = {
+  (uint8_t *)ssd1306xled_font5x5,
+  6, // character width in pixels
+  1, // character height in pages (8 pixels)
+  32,127 // ASCII extents
+  };
+```
 # TO DO LIST:
 ---
 1. add side switch for controlling
