@@ -1,9 +1,9 @@
 #TIPS:
 ---
 1. (v2). When u converting image to byte array, ___"DRAW MODE"___ shuld be ___"verticaL 1Bit per byte"___
-2. (V2). oled librarys default, gets vertical value sperated by ___default value___
->Display = 128x64 -->  64 = 8 * default_value
->I wrote 8 cause using oled font library (5x5_font.h )writes this:
+2. (v2). oled librarys default, gets vertical value sperated by ___default value___
+>Display = 128x64 -->  64 = default_value (8) * n
+>I wrote 8 to default_value cause using oled font library (5x5_font.h) haves this:
 ```plaintext
 const DCfont TinyOLEDFont5x5 = {
   (uint8_t *)ssd1306xled_font5x5,
@@ -11,6 +11,10 @@ const DCfont TinyOLEDFont5x5 = {
   1, // character height in pages (8 pixels)
   32,127 // ASCII extents
   };
+```
+>For example if i wanna write to 32 (y), i should write it like:
+```plaintext
+oled.setCursor(x, 4 ); // 8 (default_value) * n (4) = 32
 ```
 # TO DO LIST:
 ---
