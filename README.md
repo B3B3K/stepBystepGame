@@ -99,4 +99,4 @@ I will make (made) simple sound game instead pong game cause:
 
 #Connections For ATpiyan0.ino
 ---
-![img](https://github.com/B3B3K/stepBystepGame/blob/main/pinout.png?raw=true
+![img](pinout.png)
