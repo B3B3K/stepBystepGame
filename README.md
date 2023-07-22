@@ -19,9 +19,9 @@ oled.setCursor(y_axis_demo,54);y_axis_demo = y_axis_demo + 1;oled.print("yo!");o
 }
 ```
 
-#SECOND VERSIN:
+#SECOND VERSION:
 ---
-'''plaintext
+```plaintext
 
 uint8_t new_x = ball_x + ball_dir_x;uint8_t new_y = ball_y + ball_dir_y;
         //check wall horizontal
@@ -32,4 +32,5 @@ if(new_y <= 0 || new_y >= 8) {ball_dir_y = -ball_dir_y;new_y += ball_dir_y + bal
 oled.setCursor(ball_x, ball_y );oled.startData();oled.sendData(0x0);oled.endData();oled.setCursor(new_x, new_y);oled.startData();oled.sendData(0x6);oled.endData();oled.setCursor(31,31);oled.print(new_y);
         //set values for next step
 ball_x = new_x;ball_y = new_y;   
-        '''
+
+```
