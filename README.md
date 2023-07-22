@@ -52,3 +52,28 @@ oled.setCursor(ball_x, ball_y );oled.startData();oled.sendData(0x0);oled.endData
 ball_x = new_x;ball_y = new_y;   
 
 ```
+
+#FORGET ABOUT project
+---
+bug but gold :)  
+```plaintext
+
+  uint8_t new_x = ball_x + ball_dir_x; uint8_t new_y = ball_y + ball_dir_y;
+  //check
+
+  if (new_x == 0 || new_x == 64) {
+    ball_dir_x = -ball_dir_x;
+    new_x += ball_dir_x + ball_dir_x;
+  }
+  //check
+  if (new_y == 0  || new_y == 4) {
+    ball_dir_y = -ball_dir_y;
+    new_y += ball_dir_y + ball_dir_y;
+  }
+  oled.setCursor(new_x,new_y);
+  oled.startData();
+  oled.sendData(0b11111111);
+  oled.repeatData(0b10000000, width - 2);
+  oled.endData();
+```
+
