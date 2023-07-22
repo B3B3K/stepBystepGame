@@ -18,11 +18,14 @@ oled.setCursor(x, 4 ); // 8 (default_value) * n (4) = 32
 ```
 # TO DO LIST:
 ---
-1. add side switch for controlling
-2. oled should be 64*32
-3. made targets, ball and scrolling thing 1px height
-4. make a physics
-5. FINISH THE GAME
+1. add side switch for controlling -->>
+1.5. now works with one button
+3. oled should be 64*32 (made it)
+4. made targets, ball and scrolling thing 1px height
+4.5 now enemy and target is your time 
+6. make a physics
+6.5 why?
+8. FINISH THE GAME (made it)
 
 #FIRST VERSION:
 ---
@@ -76,4 +79,12 @@ bug but gold :)
   oled.repeatData(0b10000000, width - 2);
   oled.endData();
 ```
+#What I Did?
+---
+1. 128x64.ino
+>   first demo of buttons with text
+3. ArduBreakout.ino
+> Bitmap print with animation
+4. ATpiyan0.ino
+> BUG BUT GOLD!!!
 
