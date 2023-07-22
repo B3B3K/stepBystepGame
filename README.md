@@ -89,3 +89,9 @@ I will make (made) simple sound game instead pong game cause:
 4. ATpiyan0.ino
 > BUG BUT GOLD!!!
 
+#Actually, What I Did?
+---
+1. Support Attiny85
+2. Graphics with optimizations
+3. Button contol
+4. Tones for Buzzer
